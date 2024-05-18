@@ -137,8 +137,6 @@ public class LearnEditorSelection : EditorWindow
             }
         }
         #endregion
-
-
     }
 
     private void OnSelectionChange()
