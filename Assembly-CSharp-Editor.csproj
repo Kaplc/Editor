@@ -41,7 +41,9 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Assets\Editor\TestEditorWindow.cs" />
+    <Compile Include="Assets\Editor\LearnEditorGUIUtilityEvent.cs" />
+    <Compile Include="Assets\Editor\LearnEditorGUIUtility.cs" />
+    <Compile Include="Assets\Editor\LearnEditorWindow.cs" />
     <Reference Include="UnityEngine">
       <HintPath>E:\Develop\Unity\2021.3.36f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>

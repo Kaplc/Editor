@@ -22,7 +22,7 @@ public enum ETestMoreSelectEnum
     B_C = B | C
 }
 
-public class TestEditorWindow : EditorWindow
+public class LearnEditorWindow : EditorWindow
 {
     int layerIndex = 0;
     string tagIndex;
@@ -74,10 +74,10 @@ public class TestEditorWindow : EditorWindow
         Debug.Log("扩展GameObject");
     }
 
-    [MenuItem("Editor/TestEditorWindow")]
+    [MenuItem("Editor/LearnEditorWindow")]
     public static void OpenEditorWindow()
     {
-        TestEditorWindow window = GetWindow<TestEditorWindow>();
+        LearnEditorWindow window = GetWindow<LearnEditorWindow>();
         window.minSize = new Vector2(800, 600);
         window.Show();
     }
