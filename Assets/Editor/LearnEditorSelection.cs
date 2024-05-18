@@ -18,11 +18,13 @@ public class LearnEditorSelection : EditorWindow
     private StringBuilder str2 = new StringBuilder("未选中对象");
     private StringBuilder str3 = new StringBuilder("未选中对象");
     private StringBuilder str4 = new StringBuilder("未选中对象");
-    
+
+    private GameObject obj;
+
     private void OnGUI()
     {
         // selection 获取当前选中的对象
-        
+
         // 获取当前选中的对象
         // Selection.activeObject
         // Selection.activeGameObject
@@ -61,7 +63,7 @@ public class LearnEditorSelection : EditorWindow
                 str1.Clear();
                 str1.Append("未选中对象");
             }
-            
+
             Debug.Log(str1);
         }
 
@@ -84,7 +86,7 @@ public class LearnEditorSelection : EditorWindow
                 str2.Clear();
                 str2.Append("未选中GameObject");
             }
-            
+
             Debug.Log(str2);
         }
 
@@ -106,8 +108,42 @@ public class LearnEditorSelection : EditorWindow
                 str3.Clear();
                 str3.Append("未选中GameObject");
             }
-            
+
             Debug.Log(str3);
         }
+
+        #region 判断选中、筛选对象、选中对象变化的回调
+        obj = EditorGUILayout.ObjectField("选择一个对象", obj, typeof(GameObject), true) as GameObject;
+        // 判断选中
+        if (GUILayout.Button("判断选中的对象是否是指定对象"))
+        {
+            if (Selection.Contains(obj))
+            {
+                Debug.Log("选中的对象是指定对象");
+            }
+            else
+            {
+                Debug.Log("选中的对象不是指定对象");
+            }
+        }
+        
+        // 筛选对象
+        if (GUILayout.Button("筛选对象"))
+        {
+            GameObject[] gameObjects = Selection.GetFiltered<GameObject>(SelectionMode.Unfiltered);
+            foreach (var gameObject in gameObjects)
+            {
+                Debug.Log(gameObject.name);
+            }
+        }
+        #endregion
+
+
+    }
+
+    private void OnSelectionChange()
+    {
+        // 当选中对象发生变化时，会调用这个方法
+        Debug.Log("选中对象发生变化");
     }
 }
