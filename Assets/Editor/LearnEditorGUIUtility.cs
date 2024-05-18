@@ -158,10 +158,8 @@ public class LearnEditorGUIUtility : EditorWindow
         //                                 SerializedProperty 要绘制为SerializedProperty的曲线,
         //                                 Color 绘制曲线的颜色,
         //                                 Color 绘制背景的颜色);
-        if (curve != null)
-        {
-            curve = EditorGUILayout.CurveField("绘制曲线", curve); 
-        }
+
+        curve = EditorGUILayout.CurveField("绘制曲线", curve); 
         EditorGUIUtility.DrawCurveSwatch(new Rect(0, 400, 100,100), curve, null, Color.red, Color.white);
 
         #endregion
