@@ -54,7 +54,7 @@ public class LearnEditorGUIUtility : EditorWindow
         }
         #endregion
 
-        #region 搜索框，对象选中提示
+        #region 搜索框，高亮选中对象
 
         if (GUILayout.Button("打开搜索框"))
         {

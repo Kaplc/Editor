@@ -23,6 +23,8 @@ public class LearnEditorSelection : EditorWindow
 
     private void OnGUI()
     {
+        #region selection 获取当前选中的对象及信息
+
         // selection 获取当前选中的对象
 
         // 获取当前选中的对象
@@ -111,6 +113,8 @@ public class LearnEditorSelection : EditorWindow
 
             Debug.Log(str3);
         }
+
+            #endregion
 
         #region 判断选中、筛选对象、选中对象变化的回调
         obj = EditorGUILayout.ObjectField("选择一个对象", obj, typeof(GameObject), true) as GameObject;

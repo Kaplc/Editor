@@ -6,7 +6,7 @@ namespace Editor.Handle
 {
     public class LearnEditorHandleWindow: EditorWindow
     {
-        [MenuItem("Editor/Handle/LearnEditorHandle")]
+        [MenuItem("Editor/LearnEditorHandle")]
         private static void OpenWindow()
         {
             EditorWindow window = GetWindow<LearnEditorHandleWindow>();

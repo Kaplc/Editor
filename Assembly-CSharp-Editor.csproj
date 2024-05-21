@@ -49,6 +49,7 @@
     <Compile Include="Assets\Editor\GUIUtility\LearnEditorGUIUtilityEvent.cs" />
     <Compile Include="Assets\Editor\GUIUtility\LearnEditorGUIUtility.cs" />
     <Compile Include="Assets\Editor\LearnEditorWindow.cs" />
+    <Compile Include="Assets\Editor\LearnEditorUtility\LearnEditorUtility.cs" />
     <Reference Include="UnityEngine">
       <HintPath>E:\Develop\Unity\2021.3.36f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>
