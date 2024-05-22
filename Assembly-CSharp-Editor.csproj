@@ -41,15 +41,20 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Assets\Editor\PrefabUtility\LearnPrefabUtility.cs" />
     <Compile Include="Assets\Editor\Handle\LearnEditorHandle.cs" />
-    <Compile Include="Assets\Editor\LearnEditorEvent.cs" />
-    <Compile Include="Assets\Editor\LearnEditorSelection.cs" />
+    <Compile Include="Assets\Editor\EditorEvent\LearnEditorEvent.cs" />
+    <Compile Include="Assets\Editor\Selection\LearnEditorSelection.cs" />
+    <Compile Include="Assets\Editor\AssetDatabase\LearnEditorAssetDatabase.cs" />
     <Compile Include="Assets\Editor\Inspector\LearnEditorInspector.cs" />
     <Compile Include="Assets\Editor\Handle\LearnEditorHandleWindow.cs" />
     <Compile Include="Assets\Editor\GUIUtility\LearnEditorGUIUtilityEvent.cs" />
+    <Compile Include="Assets\Editor\EditorUtility\LearnEditorUtility.cs" />
+    <Compile Include="Assets\Editor\EditorApplication\LearnEditorApplication.cs" />
     <Compile Include="Assets\Editor\GUIUtility\LearnEditorGUIUtility.cs" />
-    <Compile Include="Assets\Editor\LearnEditorWindow.cs" />
-    <Compile Include="Assets\Editor\LearnEditorUtility\LearnEditorUtility.cs" />
+    <Compile Include="Assets\Editor\EditorWindow\LearnEditorWindow.cs" />
+    <Compile Include="Assets\Editor\CompilationPipeline\LearnCompilationPipeline.cs" />
+    <Compile Include="Assets\Editor\AssetPostprocessor\LearnAssetPostprocessor.cs" />
     <Reference Include="UnityEngine">
       <HintPath>E:\Develop\Unity\2021.3.36f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>
